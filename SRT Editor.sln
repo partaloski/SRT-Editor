@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SRT Editor", "SRT Editor\SRT Editor.csproj", "{033977A1-9D3B-4392-A948-4D411CCBEBFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{033977A1-9D3B-4392-A948-4D411CCBEBFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{033977A1-9D3B-4392-A948-4D411CCBEBFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{033977A1-9D3B-4392-A948-4D411CCBEBFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{033977A1-9D3B-4392-A948-4D411CCBEBFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {295155AD-5786-4A77-B2F2-08F305613A3B}
+	EndGlobalSection
+EndGlobal
