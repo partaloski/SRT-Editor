@@ -7,6 +7,9 @@
     <Compile Update="GoToLine.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="MoveTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="SRT Editor.cs">
       <SubType>Form</SubType>
     </Compile>

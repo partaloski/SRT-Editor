@@ -19,3 +19,4 @@ C:\Users\parta\source\repos\SRT Editor\SRT Editor\obj\Debug\net5.0-windows\SRT E
 C:\Users\parta\source\repos\SRT Editor\SRT Editor\obj\Debug\net5.0-windows\SRT_Editor.EditSubtitle.resources
 C:\Users\parta\source\repos\SRT Editor\SRT Editor\obj\Debug\net5.0-windows\SRT_Editor.Properties.Resources.resources
 C:\Users\parta\source\repos\SRT Editor\SRT Editor\obj\Debug\net5.0-windows\SRT_Editor.GoToLine.resources
+C:\Users\parta\source\repos\SRT Editor\SRT Editor\obj\Debug\net5.0-windows\SRT_Editor.MoveTime.resources

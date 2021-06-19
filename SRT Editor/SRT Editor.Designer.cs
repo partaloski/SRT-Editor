@@ -48,6 +48,8 @@ namespace SRT_Editor
             this.add10msDelayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sub10msDelayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnGoTo = new System.Windows.Forms.Button();
+            this.customOffsetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -194,6 +196,8 @@ namespace SRT_Editor
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.customOffsetToolStripMenuItem,
+            this.toolStripSeparator2,
             this.add10msDelayToolStripMenuItem,
             this.sub10msDelayToolStripMenuItem});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
@@ -227,6 +231,19 @@ namespace SRT_Editor
             this.btnGoTo.Text = "Go To";
             this.btnGoTo.UseVisualStyleBackColor = true;
             this.btnGoTo.Click += new System.EventHandler(this.btnGoTo_Click);
+            // 
+            // customOffsetToolStripMenuItem
+            // 
+            this.customOffsetToolStripMenuItem.Name = "customOffsetToolStripMenuItem";
+            this.customOffsetToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Space)));
+            this.customOffsetToolStripMenuItem.Size = new System.Drawing.Size(276, 26);
+            this.customOffsetToolStripMenuItem.Text = "Custom Offset";
+            this.customOffsetToolStripMenuItem.Click += new System.EventHandler(this.customOffsetToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(273, 6);
             // 
             // Form1
             // 
@@ -273,6 +290,8 @@ namespace SRT_Editor
         private System.Windows.Forms.ToolStripMenuItem add10msDelayToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sub10msDelayToolStripMenuItem;
         private System.Windows.Forms.Button btnGoTo;
+        private System.Windows.Forms.ToolStripMenuItem customOffsetToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
     }
 }
 

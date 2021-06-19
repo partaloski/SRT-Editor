@@ -48,9 +48,24 @@ namespace SRT_Editor
             string[] froms = from.Split(":");
             string[] tos = to.Split(":");
 
-            string fromS = getTimeString(getTime(froms)+100);
+            string fromS = getTimeString(getTime(froms) + 100);
 
             string toS = getTimeString(getTime(tos) + 100);
+
+            this.timestamp = fromS + " --> " + toS;
+        }
+        public void add(int x)
+        {
+            string[] times = timestamp.Split(" --> ");
+            string from = times[0];
+            string to = times[1];
+            //00:00:34,425 --> 00:00:35,992
+            string[] froms = from.Split(":");
+            string[] tos = to.Split(":");
+
+            string fromS = getTimeString(getTime(froms) + x);
+
+            string toS = getTimeString(getTime(tos) + x);
 
             this.timestamp = fromS + " --> " + toS;
         }

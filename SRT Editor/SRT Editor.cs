@@ -191,5 +191,16 @@ namespace SRT_Editor
                 switchPreview();
             }
         }
+
+        private void customOffsetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MoveTime mt = new MoveTime();
+            mt.ShowDialog();
+            if(mt.DialogResult == DialogResult.OK)
+            {
+                foreach (Subtitle s in subtitles)
+                    s.add(mt.ms);
+            }
+        }
     }
 }
