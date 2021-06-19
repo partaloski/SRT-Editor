@@ -9,5 +9,7 @@
 	<li>Can delete lines that you tell it to delete, if you confirm it.</li>
 	<li>Automatically keeps the line number in sync with removal of any subtitle.</li>
 	<li>I haven't added a functionality that makes creation of .srt files possible, but will do if there is such request by users.</li>
-	<li>I am currently thinking of a feature that would make the subtitles editable throughout, just clicking next on the edit window</li>
+	<li>Made editing much easier, just press Ctrl+Right Arrow to go to next subtitle when in editing mode, and Ctrl+Left to go to previous subtitle!</li>
 </ul>
+<hr>
+<h2>Last updated on 19-06-2021 08:05PM

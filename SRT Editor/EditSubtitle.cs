@@ -13,15 +13,22 @@ namespace SRT_Editor
     public partial class EditSubtitle : Form
     {
         public Subtitle current { get; set; }
-        public EditSubtitle(Subtitle current)
+        public List<Subtitle> allSubs { get; set; }
+        public int index { get; set; }
+        public EditSubtitle(List<Subtitle> subs, int current)
         {
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             InitializeComponent();
-            this.current = current;
+            this.current = subs[current];
+            this.allSubs = subs;
+            this.index = current;
+            update();
+        }
+        private void update()
+        {
             tbPrev.Lines = current.lines.ToArray();
             tbCurrent.Lines = current.lines.ToArray();
         }
-
         private void btnSave_Click(object sender, EventArgs e)
         {
             string[] lines = tbCurrent.Text.Split("\n");
@@ -54,6 +61,51 @@ namespace SRT_Editor
         private void EditSubtitle_Load(object sender, EventArgs e)
         {
 
+        }
+        public void saveChanges() {
+            string[] lines = tbCurrent.Text.Split("\n");
+            if (tbCurrent.Text.Length == 0)
+            {
+                MessageBox.Show("Subtitle cannot be empty");
+                return;
+            }
+            List<String> subs = new List<String>();
+            foreach (string line in lines) subs.Add(line);
+            current.lines = subs;
+        }
+
+        private void btnPrev_Click(object sender, EventArgs e)
+        {
+            saveChanges();
+            allSubs[index] = current;
+            index--;
+            if (index < 0)
+            {
+                index = allSubs.Count - 1;
+            }
+            current = allSubs[index]; update();
+        }
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            saveChanges();
+            allSubs[index] = current;
+            index++;
+            if (index > allSubs.Count - 1)
+            {
+                index = 0;
+            }
+            current = allSubs[index]; update();
+        }
+
+        private void prevToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            btnPrev_Click(sender, e);
+        }
+
+        private void nextToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            btnNext_Click(sender, e);
         }
     }
 }

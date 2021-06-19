@@ -119,11 +119,13 @@ namespace SRT_Editor
         {
             if (index == -1)
                 return;
-            EditSubtitle editSubtitle = new EditSubtitle(savedSubtitle);
+            EditSubtitle editSubtitle = new EditSubtitle(subtitles, index);
             editSubtitle.ShowDialog();
             if(editSubtitle.DialogResult == DialogResult.OK)
             {
-                subtitles[index] = editSubtitle.current;
+                index = editSubtitle.index;
+                savedSubtitle = editSubtitle.current;
+                subtitles = editSubtitle.allSubs;
                 switchPreview();
             }
         }
